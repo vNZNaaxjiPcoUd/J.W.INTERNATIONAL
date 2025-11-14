@@ -2,22 +2,22 @@ We're glad you're interested and have a variety of services to suit your needs. 
 
 ### Plan
 - Consulting
-    - discuss solution with you
-- Basic
+    - Design solution foryou
+- BASIC
     - Provide service setup and maintain.
         - web site
         - camera
         - email support service
-- Pro
+- PRO
     - We provide you with various website, e-mail, shared space service establishment and daily technical consultation.
         - Web site
         - Security cameras
         - Network 
         - Email 
         - Domain
-        - chat support service in day
-- Premium
+        - Chat support service in day
+- PREMIUM
     - Customize for you
-        - Pro package
-        - More service by deal
-        - phone / on site support service
+        - Include all PRO package
+        - More service by consulting
+        - Phone and on site support service

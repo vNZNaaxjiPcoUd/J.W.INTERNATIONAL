@@ -3,6 +3,25 @@ layout: html
 ---
 
 
+<style>
+  .grid-item {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;   /* 這行讓寬高等於高，形成正方形！ */
+    overflow: hidden;
+    background: #f1f1f1;    /* 可選：沒圖時的底色 */
+  }
+  .grid-item img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    /* 完整顯示不變形（推薦） */
+    /* 想要填滿裁切改成 object-fit: cover; */
+  }
+</style>
+
   <!-- Grid -->
   <div class="w3-row-padding" id="about">
     <div class="w3-center w3-padding-64">
@@ -11,7 +30,7 @@ layout: html
   
     <div class="w3-row-padding w3-margin-bottom">
 
-      <div class="w3-quarter w3-padding">
+      <div class="w3-quarter w3-padding"><div class="grid-item">
         <div class="w3-card-4" style="margin:0 auto;">
           <img src="/l1.png"  alt="l" class="w3-image">
           <div class="w3-container" action="/ctlt">
@@ -21,9 +40,9 @@ layout: html
             <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='/ctsrv';">Contact</button></p>
           </div>
         </div>
-      </div>
+      </div></div>
 
-      <div class="w3-quarter w3-padding">
+      <div class="w3-quarter w3-padding"><div class="grid-item">
         <div class="w3-card-4" style="margin:0 auto;">
           <img src="/l2.png" alt="j" class="w3-image">
           <div class="w3-container">
@@ -33,9 +52,9 @@ layout: html
             <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='/ctsrv';">Contact</button></p>
           </div>
         </div>
-      </div>
+      </div></div>
 
-      <div class="w3-quarter w3-padding">
+      <div class="w3-quarter w3-padding"><div class="grid-item">
         <div class="w3-card-4" style="margin:0 auto;">
           <img src="/l3.png" alt="g" class="w3-image">
           <div class="w3-container">
@@ -45,9 +64,9 @@ layout: html
             <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='/ctsrv';">Contact</button></p>
           </div>
         </div>
-      </div>
+      </div></div>
   
-      <div class="w3-quarter w3-padding">
+      <div class="w3-quarter w3-padding"><div class="grid-item">
         <div class="w3-card-4" style="margin:0 auto;">
           <img src="/l4.jpeg" alt="a" class="w3-image">
           <div class="w3-container">
@@ -57,7 +76,7 @@ layout: html
             <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='/ctsrv';">Contact</button></p>
           </div>
         </div>
-      </div>
+      </div></div>
 
     </div>
   </div>

@@ -2,7 +2,8 @@ We're glad you're interested and have a variety of services to suit your needs. 
 
 ### Plan
 - Consulting
-    - Design solution foryou
+    - Design solution for you.
+    - Trust us to handle your business or home needs, from security cams and data storage to network installation, web services, email, and everything in between. Our expertise empowers you to live more fully. Check out our versatile solutions now, or contact us for a bespoke plan. Begin immediately and satisfy your requirements seamlessly.
 - BASIC
     - Provide service setup and maintain.
         - web site

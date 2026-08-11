@@ -1,10 +1,10 @@
 ---
 date: 2026-8-1 10:30:00 -0500
 ---
-Office app suite solution
+Office productivity suite
 -------------------
 
-We provide enterprise office solutions 
+We provide office productivity suite solutions 
 - built upon the Google ecosystem
 - Docs for business documentation
 - Sheets for statistical analysis

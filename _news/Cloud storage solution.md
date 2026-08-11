@@ -3,6 +3,7 @@ date: 2025-10-10 10:30:00 -0500
 ---
 Cloud storage solution
 -------------------
+
 We offer scalable Google storage solutions
 - Base on google
 - Capacities ranging from 30GB to 5TB. 

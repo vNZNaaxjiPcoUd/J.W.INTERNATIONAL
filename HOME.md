@@ -3,10 +3,9 @@
 ***We are the computer service company. We support computer setup, consult. Follows are some services of us.***
 
 - Websites
-- IT & Network
 - Mobile App
-- Design Architecture
-- Data Processing & Web Search
+- Small business operation app architecture design
+- Data Processing
 - Bot Development & AI Integration
 - Education of Computer Tutoring, Consulting, Teaching
 

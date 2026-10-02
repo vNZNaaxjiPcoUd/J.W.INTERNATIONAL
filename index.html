@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWINT</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f8f9fa;
+            --text-color: #333;
+            --border-color: #e0e0e0;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            color: var(--text-color); 
+            line-height: 1.6; 
+            background-color: #fff;
+        }
+
+        header { 
+            background: #fff; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+
+        nav { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 1rem 5%; 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo { 
+            font-size: 1.5rem; 
+            font-weight: 800; 
+            color: var(--primary-color); 
+            letter-spacing: 1px;
+        }
+
+        .nav-links { 
+            list-style: none; 
+            display: flex; 
+            gap: 2rem; 
+        }
+
+        .nav-links a { 
+            text-decoration: none; 
+            color: var(--text-color); 
+            font-weight: 500; 
+            transition: color 0.3s; 
+        }
+
+        .nav-links a:hover { 
+            color: var(--primary-color); 
+        }
+
+        .hero { 
+            background: linear-gradient(rgba(0, 86, 179, 0.85), rgba(0, 34, 71, 0.85)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover; 
+            color: #fff; 
+            text-align: center; 
+            padding: 120px 20px; 
+        }
+
+        .hero h1 { 
+            font-size: 2.8rem; 
+            margin-bottom: 1.5rem; 
+            font-weight: 700;
+        }
+
+        .hero p { 
+            font-size: 1.2rem; 
+            max-width: 650px; 
+            margin: 0 auto 2.5rem; 
+            opacity: 0.9;
+        }
+
+        .btn { 
+            display: inline-block; 
+            padding: 12px 30px; 
+            background: #fff; 
+            color: var(--primary-color); 
+            text-decoration: none; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            transition: all 0.3s ease; 
+        }
+
+        .btn:hover { 
+            background: var(--primary-color); 
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0,86,179,0.4);
+        }
+
+        section {
+            padding: 5rem 5%;
+        }
+
+        .services { 
+            background: var(--secondary-color); 
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title { 
+            text-align: center; 
+            margin-bottom: 3.5rem; 
+            font-size: 2.2rem; 
+            color: var(--text-color); 
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--primary-color);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+            gap: 2.5rem; 
+        }
+
+        .card { 
+            background: #fff; 
+            padding: 2.5rem 2rem; 
+            border-radius: 8px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+            text-align: center; 
+            transition: transform 0.3s, box-shadow 0.3s; 
+        }
+
+        .card:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .services .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .plans .card { 
+            border: 1px solid var(--border-color); 
+            display: flex;
+            flex-direction: column;
+        }
+
+        .plans .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .plans .subtitle {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .plans .features {
+            text-align: left;
+            list-style: none;
+            margin: 1.5rem 0;
+            flex-grow: 1;
+        }
+
+        .plans .features li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .plans .features li::before {
+            content: '✓';
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        footer { 
+            background: #1a1a1a; 
+            color: #f4f4f4; 
+            text-align: center; 
+            padding: 3rem 5%; 
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            font-size: 0.95rem;
+        }
+
+        .footer-content p {
+            margin-bottom: 0.5rem;
+        }
+
+        #time-display { 
+            font-size: 0.85rem; 
+            margin-top: 20px; 
+            color: #888; 
+            font-family: monospace;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2rem; }
+            section { padding: 3rem 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">J.W. INTERNET TECHNOLOGY</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#plans">Plans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Empower your Vision with Seamlessly Integrated Technology</h1>
+        <p>Managing domain, email, and cloud setup requires considerable time and effort. We deliver customized technical solutions so you can focus on growing your business.</p>
+        <a href="#plans" class="btn">Explore Solutions</a>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">What We Offer</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Design</h3>
+                    <p>Professional management of your domain, business email, and cloud infrastructure. We provide a customized technical blueprint saving you valuable time.</p>
+                </div>
+                <div class="card">
+                    <h3>Deliver</h3>
+                    <p>In accordance with your chosen plan, we execute tailored requirements and deliver a turnkey solution with comprehensive onboarding support.</p>
+                </div>
+                <div class="card">
+                    <h3>Operate</h3>
+                    <p>We ensure smooth daily operations through proactive system health monitoring. By managing background technicalities, we guarantee system stability.</p>
+                </div>
+                <div class="card">
+                    <h3>Support</h3>
+                    <p>Should you experience operational issues or glitches, our dedicated email and live chat teams are available to deliver on-demand technical support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans" class="plans">
+        <div class="container">
+            <h2 class="section-title">Choose Your Plan</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Basic</h3>
+                    <p class="subtitle">Perfect for micro-businesses</p>
+                    <ul class="features">
+                        <li>Basic system health monitoring</li>
+                        <li>Domain and email setup</li>
+                        <li>Standard customer support</li>
+                    </ul>
+                </div>
+                <div class="card" style="border-color: var(--primary-color); position: relative;">
+                    <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: white; padding: 2px 15px; border-radius: 12px; font-size: 0.8rem; font-weight: bold;">Recommended</div>
+                    <h3>Pro</h3>
+                    <p class="subtitle">Built for growing companies</p>
+                    <ul class="features">
+                        <li>All Basic features included</li>
+                        <li>Custom cloud environment setup</li>
+                        <li>Priority live chat support</li>
+                        <li>Regular security assessments</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Premium</h3>
+                    <p class="subtitle">Comprehensive enterprise IT</p>
+                    <ul class="features">
+                        <li>All Pro features included</li>
+                        <li>24/7 proactive monitoring</li>
+                        <li>Dedicated senior technical consultant</li>
+                        <li>Unlimited on-demand technical support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 J.W. INTERNET TECHNOLOGY. All Rights Reserved.</p>
+            <p>Operating in Tampa, FL | Powered by JWINT Design Center</p>
+            <div id="time-display"></div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling function
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Dynamic time display
+        function updateTime() {
+            const timeDisplay = document.getElementById('time-display');
+            const now = new Date();
+            const options = { 
+                year: 'numeric', month: '2-digit', day: '2-digit', 
+                hour: '2-digit', minute: '2-digit', second: '2-digit',
+                hour12: true
+            };
+            timeDisplay.textContent = 'System Time: ' + now.toLocaleString('en-US', options);
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>

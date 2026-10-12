@@ -3,7 +3,7 @@ layout: html
 ---
 <br><br>
 <h3>We deliver comprehensive IT services to optimize infrastructure, accelerate cloud migration, and strengthen cybersecurity. Our tailored managed solutions offer 24/7 proactive monitoring, reliable data backup, and expert support. By streamlining daily operations and mitigating compliance risks, we empower your business to drive digital transformation and achieve sustainable, scalable future growth.</h3>
-<br><br><br><br><div class="w3-row-padding" id="about">
+<br><br><br><div class="w3-row-padding" id="about">
 {% assign pp = site.news | sort_natural: "date" | reverse %}
 {% for p in pp %}
 <div class="w3-card w3-light-grey w3-hover-shadow" onclick="location.href='{{ p.url }}';";>

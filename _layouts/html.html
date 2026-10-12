@@ -113,18 +113,21 @@ html {
 
 
     <!-- Slideshow next/previous buttons -->
-    <div class="w3-cell-row w3-dark-grey w3-medium" style="padding-top: 0px; padding-bottom: 0px; line-height: 1;">
-      <div class="w3-cell w3-left-align w3-middle" onclick="plusDivs(-1)" style="width: 15%; cursor: pointer;">
+    <div class="w3-dark-grey w3-medium" style="display: flex; align-items: center; justify-content: space-between; padding: 4px 8px;">
+      <!-- 左箭頭 -->
+      <div onclick="plusDivs(-1)" style="width: 15%; text-align: left; cursor: pointer; display: flex; align-items: center;">
         <i class="fa fa-arrow-circle-left w3-hover-text-teal"></i>
       </div>
 
-      <div class="w3-cell w3-center w3-middle">
+      <!-- 中間指示點 -->
+      <div style="display: flex; align-items: center; justify-content: center; gap: 4px;">
         <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
         <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
         <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
       </div>
 
-      <div class="w3-cell w3-right-align w3-middle" onclick="plusDivs(1)" style="width: 15%; cursor: pointer;">
+      <!-- 右箭頭 -->
+      <div onclick="plusDivs(1)" style="width: 15%; text-align: right; cursor: pointer; display: flex; align-items: center; justify-content: flex-end;">
         <i class="fa fa-arrow-circle-right w3-hover-text-teal"></i>
       </div>
     </div>

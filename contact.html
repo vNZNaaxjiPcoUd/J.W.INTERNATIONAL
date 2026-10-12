@@ -16,17 +16,38 @@ title: JWINT
   </div>
 </div-->
 
-<div style="font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Microsoft JhengHei', sans-serif; background-color: #f8fafc; margin: 0; display: flex; justify-content: center; align-items: center; height: 80dvh; padding: 20px; color: #0f172a; box-sizing: border-box;">
+<!--div style="font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Microsoft JhengHei', sans-serif; background-color: #f8fafc; margin: 0; display: flex; justify-content: center; align-items: center; height: 80dvh; padding: 20px; color: #0f172a; box-sizing: border-box;">
   <div class="chat-container" style="background-color: #ffffff; border: none; border-radius: 16px; padding: 32px; width: 100%; max-width: 600px; box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04); display: flex; flex-direction: column; box-sizing: border-box; height: 100%;">
       
-      <!-- 標題區域 -->
+      
       <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 24px;">
           <div style="width: 4px; height: 24px; background-color: #1d4ed8; border-radius: 2px;"></div>
           <h2 id="ntTitle" style="margin: 0; font-size: 22px; font-weight: 700; color: #0f172a; letter-spacing: -0.3px;">Contact to JWINT</h2>
       </div>
 
-      <!-- 表單輸入區域 -->
+      
       <div class="input-group" style="display: flex; flex-direction: column; gap: 16px; flex-grow: 1; box-sizing: border-box;">
+          <input id="ntName" type="email" placeholder="your email address" style="width: 100%; padding: 14px 18px; font-size: 15px; font-family: inherit; border: none; background-color: #f1f5f9; border-radius: 10px; outline: none; color: #0f172a; transition: all 0.2s ease; box-sizing: border-box;">
+          
+          <textarea id="ntMsgInput" placeholder="leave your message!" style="width: 100%; padding: 14px 18px; font-size: 15px; font-family: inherit; border: none; background-color: #f1f5f9; border-radius: 10px; outline: none; color: #0f172a; transition: all 0.2s ease; resize: none; min-height: 100px; flex-grow: 1; box-sizing: border-box;"></textarea>
+          
+          <button id="ntSendBtn" style="width: 100%; background-color: #1d4ed8; color: #ffffff; border: none; padding: 14px 22px; font-size: 16px; font-weight: 600; border-radius: 10px; cursor: pointer; white-space: nowrap; transition: background-color 0.2s, transform 0.1s; height: 48px; flex-shrink: 0; box-sizing: border-box; box-shadow: 0 4px 12px rgba(29, 78, 216, 0.25);">Go!</button>
+      </div>
+
+  </div>
+</div-->
+
+<div style="font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Microsoft JhengHei', sans-serif; background-color: #f8fafc; margin: 0; display: flex; justify-content: center; align-items: center; height: 80dvh; padding: 20px; color: #0f172a; box-sizing: border-box; width: 100%;">
+  <div class="chat-container" style="background-color: #ffffff; border: none; border-radius: 16px; padding: 32px; width: 100%; box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04); display: flex; flex-direction: column; box-sizing: border-box; height: 100%;">
+      
+      
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 24px;">
+          <div style="width: 4px; height: 24px; background-color: #1d4ed8; border-radius: 2px;"></div>
+          <h2 id="ntTitle" style="margin: 0; font-size: 22px; font-weight: 700; color: #0f172a; letter-spacing: -0.3px;">Contact to JWINT</h2>
+      </div>
+
+      
+      <div class="input-group" style="display: flex; flex-direction: column; gap: 16px; flex-grow: 1; box-sizing: border-box; width: 100%;">
           <input id="ntName" type="email" placeholder="your email address" style="width: 100%; padding: 14px 18px; font-size: 15px; font-family: inherit; border: none; background-color: #f1f5f9; border-radius: 10px; outline: none; color: #0f172a; transition: all 0.2s ease; box-sizing: border-box;">
           
           <textarea id="ntMsgInput" placeholder="leave your message!" style="width: 100%; padding: 14px 18px; font-size: 15px; font-family: inherit; border: none; background-color: #f1f5f9; border-radius: 10px; outline: none; color: #0f172a; transition: all 0.2s ease; resize: none; min-height: 100px; flex-grow: 1; box-sizing: border-box;"></textarea>

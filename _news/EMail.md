@@ -1,7 +1,7 @@
 ---
 date: 2024-11-23 10:30:00 -0500
 ---
-# Enterprise-Grade Google-Powered Email Infrastructure & Solutions
+# Email Infrastructure & Solutions
 
 We provide customized email 
 - infrastructure offering on google

@@ -1,7 +1,7 @@
 ---
 date: 2026-8-1 10:30:00 -0500
 ---
-# Empowering the Modern Enterprise: Next-Generation Productivity Built on the Google Ecosystem
+# Productivity Built on the Google Ecosystem
 
 We provide office productivity suite solutions 
 - built upon the Google ecosystem

@@ -36,10 +36,3 @@ To drive engagement across large audiences, the solution embeds interactive disc
 ### 5. Strategic Integration Option: Legacy Hardware & SIP/H.323 Interoperability Bridge
 
 To maximize return on existing technology assets, the platform features an optional SIP/H.323 interoperability connector. This module bridges traditional physical boardroom infrastructure—such as legacy video hardware walls and third-party room endpoints (e.g., Cisco, Poly, or Logitech room kits)—into Google-hosted 500-participant cloud sessions. Organizations can modernize their digital collaboration stack while fully preserving existing hardware investments.
-
-## Immediate Execution Checklist
-
-1. **Network Firewall Configuration:** Verify open outbound UDP ports (19302–19309) and configure domain allowlists for Google media servers.
-2. **Directory Identity Sync:** Connect enterprise LDAP/SAML identity providers to the central administration panel for automated SSO mapping.
-3. **Policy & Privilege Assignment:** Define domain host controls, guest access rules, waiting room defaults, and cloud recording storage parameters.
-4. **Pilot Deployment Validation:** Execute a simulated 50-node multi-device stress test to verify adaptive audio/video streaming performance prior to enterprise launch.

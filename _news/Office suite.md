@@ -52,8 +52,6 @@ Break down communication barriers without sacrificing security. Google Chat serv
 * **Workflow Automation:** Integrate custom bots and third-party webhooks to push automated system alerts, operational updates, and approval workflows directly into chat streams.
 * **Enterprise Compliance:** Retain complete administrative oversight with custom retention policies, eDiscovery capabilities, and automated data loss prevention (DLP) rules.
 
----
-
 ## Drive Enterprise ROI and Agility
 Deploying our Google ecosystem productivity suite simplifies IT administrative overhead while maximizing workforce agility. By consolidating your core productivity tools into a unified, secure cloud footprint, your enterprise reduces subscription redundancy, eliminates maintenance downtime, and positions itself for sustainable digital growth.
 

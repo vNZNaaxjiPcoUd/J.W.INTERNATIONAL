@@ -1,5 +1,5 @@
 ---
-date: 2026-8-1 10:30:00 -0500
+date: 2026-10-1 10:30:00 -0500
 ---
 # Productivity Built on the Google Ecosystem
 

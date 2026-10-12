@@ -6,7 +6,7 @@ date: 2025-1-11 10:30:00 -0500
 Streamlined Infrastructure, Universal Compatibility, and Zero-Friction Content Management
 
 We deliver single-page web solutions 
-- Hosted on GitHub
+- Hosted on Cloud
 - Supporting custom domains as well as provided short URLs. 
 - Our platform ensures seamless maintenance and effortless content updates.
 - One page web style fit to Windows, MacOS, Android phone, iPhone, iPad.
@@ -22,9 +22,9 @@ We deliver single-page web solutions
 
 In today's fast-moving business landscape, digital agility, rapid loading performance, and brand consistency form the bedrock of customer trust. Enterprises no longer need complex, resource-heavy web systems to project authority online. Our single-page web solution provides an ultra-lean, secure, and visually striking platform built specifically to capture audience attention, drive conversions, and streamline operations. Engineered for startups, SMBs, and modern brands, this solution merges static architecture with human-centered design to ensure your digital storefront operates at peak efficiency 24/7.
 
-#### 2. Enterprise-Grade Hosting Powered by GitHub
+#### 2. Enterprise-Grade Hosting Powered by Google
 
-At the heart of our technical platform lies high-availability static hosting powered by [GitHub Pages](https://docs.github.com/en/pages) infrastructure. By utilizing static site architecture, your web solution bypasses traditional backend databases and dynamic processing overhead. This delivers lightning-fast loading speeds, instantaneous page renders, and robust protection against common web vulnerabilities like SQL injection and server overload. Furthermore, hosting on GitHub eliminates monthly server maintenance bills, offering enterprise-class global delivery at zero additional hosting fees.
+At the heart of our technical platform lies high-availability static hosting powered by Google infrastructure. By utilizing static site architecture, your web solution bypasses traditional backend databases and dynamic processing overhead. This delivers lightning-fast loading speeds, instantaneous page renders, and robust protection against common web vulnerabilities like SQL injection and server overload. Furthermore, hosting on Google eliminates monthly server maintenance bills, offering enterprise-class global delivery at zero additional hosting fees.
 
 #### 3. Custom Domain & Integrated Short URL Management
 

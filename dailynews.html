@@ -8,7 +8,7 @@ layout: html
 <div class="w3-row-padding" id="about">
 {% assign pp = site.news | sort_natural: "date" | reverse %}
 {% for p in pp %}
-<div class="w3-card w3-light-grey w3-hover-shadow" onclick="location.href='{{ p.url }}';";>
+<!--div class="w3-card w3-light-grey w3-hover-shadow" onclick="location.href='{{ p.url }}';";>
 
   <header class="w3-container w3-grey">&nbsp</header>
   
@@ -18,7 +18,35 @@ layout: html
   <div style="align-items: right;"> {{ p.date | date: "%a, %b %d, %Y" }}</div>
 
   <br>
+</div-->
+
+<div class="w3-card w3-light-grey w3-hover-shadow w3-padding" onclick="location.href='{{ p.url }}';" style="cursor: pointer;">
+  <div style="display: flex; align-items: flex-start; gap: 16px;">
+
+    <!-- 1. 左側藍色頭部區塊 (圓形圖示) -->
+    <div class="w3-blue w3-circle w3-center" style="width: 48px; height: 48px; min-width: 48px; display: flex; align-items: center; justify-content: center;">
+      <!-- 可替換為 FontAwesome 圖示或使用者頭像 -->
+      <i class="fa fa-user w3-large"></i>
+    </div>
+
+    <!-- 2. 中間內容與右下角日期容器 -->
+    <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 48px;">
+      
+      <!-- 中間內容 -->
+      <div class="markdown-body">
+        {{ p.excerpt }}
+      </div>
+
+      <!-- 右下角日期 -->
+      <div class="w3-right-align w3-small w3-text-grey" style="margin-top: 12px;">
+        {{ p.date | date: "%a, %b %d, %Y" }}
+      </div>
+
+    </div>
+
+  </div>
 </div>
-<br><br>
+
+<br>
 {% endfor %}
 </div>

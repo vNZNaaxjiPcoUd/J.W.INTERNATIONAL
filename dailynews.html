@@ -9,13 +9,14 @@ layout: html
 {% assign pp = site.news | sort_natural: "date" | reverse %}
 {% for p in pp %}
 <div class="w3-card w3-light-grey w3-hover-shadow" onclick="location.href='{{ p.url }}';";>
-  <header class="w3-container w3-grey">
-  <H2> {{ p.date | date: "%a, %b %d, %Y" }}</H2>
-  </header>
+
+
   
   <div class="container-lg px-3 my-5 markdown-body">
   		{{ p.excerpt }}
   </div>
+  <div style="align-items: left;"> {{ p.date | date: "%a, %b %d, %Y" }}</div>
+
   <br>
 </div>
 <br><br>

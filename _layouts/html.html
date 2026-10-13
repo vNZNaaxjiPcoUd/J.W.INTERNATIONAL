@@ -33,57 +33,33 @@ html {
 <body>
 
 <!-- Links (sit on top) -->
-<!--div class="w3-top">
-  <div class="w3-row w3-large w3-light-grey">
-    <div class="w3-col s3">
-      <a href="/" class="w3-button w3-block">Home</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="/" class="w3-button w3-block">Home2</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="/plan" class="w3-button w3-block">Plan of Service</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="/dailynews" class="w3-button w3-block">Service</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="/aboutus" class="w3-button w3-block">About</a>
-    </div>
-  </div>
-</div-->
-<div class="w3-top">
+<div class="w3-top" style="max-width:1200px; left:0; right:0; margin:0 auto;">
   <div class="w3-row w3-large w3-light-grey" style="display: flex;">
-    <a href="/" class="w3-button w3-block" style="flex: 1;">&nbsp</a>
     <a href="/" class="w3-button w3-block" style="flex: 1;">Home</a>
     <a href="/plan" class="w3-button w3-block" style="flex: 1;">Plan of Service</a>
     <a href="/dailynews" class="w3-button w3-block" style="flex: 1;">Service</a>
     <a href="/aboutus" class="w3-button w3-block" style="flex: 1;">About</a>
-    <a href="/" class="w3-button w3-block" style="flex: 1;">&nbsp</a>
   </div>
 </div>
-<!-- contain -->
-<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
 
-	<div class="w3-panel">
-		<h2><b>J.W. INTERNET TECHNOLOGY</b></h2>
-		<p>Empower your Vision with seamlessly integrated technology solutions.</p>
+<!-- Container -->
+<div class="w3-content" style="max-width:1200px; margin-top:80px; margin-bottom:80px;">
+
+  <div class="w3-panel">
+    <h2><b>J.W. INTERNET TECHNOLOGY</b></h2>
+    <p>Empower your Vision with seamlessly integrated technology solutions.</p>
     <p id="clock" class="w3-tiny">Now</p>
 
     <script>
-
     function myTimer() {
       const d = new Date();
       document.getElementById("clock").innerHTML = d.toLocaleTimeString('en-US');
     }
     myTimer();
     setInterval(myTimer, 1000);
-
     </script>
-	</div>
+  </div>
 
-
-	
   <!-- Slideshow -->
   <div class="w3-container">
 
@@ -111,7 +87,6 @@ html {
       </div>
     </div>
 
-
     <!-- Slideshow next/previous buttons -->
     <div class="w3-dark-grey w3-medium" style="display: flex; align-items: center; justify-content: space-between; padding: 4px 8px;">
       <!-- 左箭頭 -->
@@ -132,8 +107,9 @@ html {
       </div>
     </div>
 
+  </div>
+
   <script>
-    // Slideshow
     var slideIndex = 1;
     showDivs(slideIndex);
     
@@ -143,11 +119,9 @@ html {
     function plusDivs(n) {
       showDivs(slideIndex += n);
     }
-    
     function currentDiv(n) {
       showDivs(slideIndex = n);
     }
-    
     function showDivs(n) {
       var i;
       var x = document.getElementsByClassName("mySlides");
@@ -163,27 +137,18 @@ html {
       x[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " w3-white";
     }
-    
-    // w3.slideshow(".mySlides", 5000);
     setInterval(plusOne, 56789);
-
   </script>
-  
 
-	{{ content }}
-
+  {{ content }}
 
 </div>
-<!-- Footer -->
 
-<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center" style="max-width:1200px; margin:0 auto;">
   <h4>J.W. INTERNET TECHNOLOGY</h4>
-  <!--<a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a> -->
   <p>Powered by <a href="https://www.jwint.net" title="JWINT" class="w3-hover-text-green">JWINT design center</a></p>
 </footer>
-
-
-
 
 </body>
 </html>

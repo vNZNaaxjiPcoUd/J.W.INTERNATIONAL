@@ -2,12 +2,12 @@
 layout: html
 ---
 
-  <style>
-    .justified-text {
-      text-align: justify;
-    }
+<style>
+  .justified-text {
+    text-align: justify;
+  }
 
-  </style>
+</style>
 <br><br>
 <h3 class="justified-text">We deliver comprehensive IT services to optimize infrastructure, accelerate cloud migration, and strengthen cybersecurity. Our tailored managed solutions offer 24/7 proactive monitoring, reliable data backup, and expert support. By streamlining daily operations and mitigating compliance risks, we empower your business to drive digital transformation and achieve sustainable, scalable future growth.</h3>
 <br><br><br>
@@ -15,17 +15,7 @@ layout: html
 <div class="w3-row-padding" id="about">
 {% assign pp = site.news | sort_natural: "date" | reverse %}
 {% for p in pp %}
-<!--div class="w3-card w3-light-grey w3-hover-shadow" onclick="location.href='{{ p.url }}';";>
 
-  <header class="w3-container w3-grey">&nbsp</header>
-  
-  <div class="container-lg px-3 my-5 markdown-body">
-  		{{ p.excerpt }}
-  </div>
-  <div style="align-items: right;"> {{ p.date | date: "%a, %b %d, %Y" }}</div>
-
-  <br>
-</div-->
 
 <div class="w3-card w3-light-grey w3-hover-shadow w3-padding" onclick="location.href='{{ p.url }}';" style="cursor: pointer;">
   <div style="display: flex; align-items: flex-start; gap: 16px;">

@@ -1,7 +1,7 @@
 ---
 date: 2026-8-1 10:30:00 -0500
 ---
-# Video Conferencing Solution for High-Capacity Scalable Collaboration
+# Video Conferencing Solution
 
 We provide scalable video conferencing solutions 
 - Base on google

@@ -9,7 +9,7 @@ layout: html
 
 </style>
 <br><br>
-<h3 class="justified-text">We deliver comprehensive IT services to optimize infrastructure, accelerate cloud migration, and strengthen cybersecurity. Our tailored managed solutions offer 24/7 proactive monitoring, reliable data backup, and expert support. By streamlining daily operations and mitigating compliance risks, we empower your business to drive digital transformation and achieve sustainable, scalable future growth.</h3>
+<b class="justified-text">We deliver comprehensive IT services to optimize infrastructure, accelerate cloud migration, and strengthen cybersecurity. Our tailored managed solutions offer 24/7 proactive monitoring, reliable data backup, and expert support. By streamlining daily operations and mitigating compliance risks, we empower your business to drive digital transformation and achieve sustainable, scalable future growth.</b>
 <br><br><br>
 
 <div class="w3-row-padding" id="about">
@@ -30,6 +30,11 @@ layout: html
     <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 36px;">
       
       <!-- 中間內容 -->
+      <style>
+        .markdown-body h1 {
+          font-size: 1.17em; /* 瀏覽器預設 H3 大小 */
+        }
+      </style>
       <div class="markdown-body">
         {{ p.excerpt }}
       </div>

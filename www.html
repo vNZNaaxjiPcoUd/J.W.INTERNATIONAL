@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JWINT - JW Internet Technology. Affordable web and IT services for small businesses.">
+    <title>JWINT | Web & IT Solutions</title>
+    <style>
+        /* CSS Reset & Core Variables */
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f8f9fa;
+            --text-color: #333333;
+            --accent-color: #28a745;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #ffffff;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 5rem 5%;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Services & Pricing Section */
+        .services {
+            padding: 5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            font-weight: normal;
+            color: #666;
+        }
+
+        /* Footer & Contact */
+        footer {
+            background-color: #222222;
+            color: #ffffff;
+            text-align: center;
+            padding: 4rem 5%;
+        }
+
+        footer h2 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            font-size: 1.5rem;
+            margin: 1.5rem 0;
+            font-weight: bold;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav a {
+                margin: 0 0.5rem;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <a href="#" class="logo">JWINT</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <h1>JW Internet Technology</h1>
+        <p>Reliable, affordable, and professional web development and IT solutions tailored for micro-businesses and individuals.</p>
+        <a href="#contact" class="cta-btn">Get Started Today</a>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section class="services" id="services">
+        <h2 class="section-title">Our Services & Pricing</h2>
+        <div class="grid">
+            
+            <!-- Service 1 -->
+            <div class="card">
+                <h3>Single-Page Website</h3>
+                <p>A professional landing page using our premium templates to showcase your brand online quickly.</p>
+                <div class="price">$50 <span>/ one-time</span></div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="card">
+                <h3>Micro E-Commerce Setup</h3>
+                <p>Basic shopping cart setup with payment gateway integration for up to 5 core products.</p>
+                <div class="price">$150 <span>/ one-time</span></div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="card">
+                <h3>Cloud Workspace Setup</h3>
+                <p>Domain verification and business email setup (Google Workspace or Microsoft 365).</p>
+                <div class="price">$25 <span>/ one-time</span></div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="card">
+                <h3>Web Hosting & Security</h3>
+                <p>Monthly system updates, routine data backups, and basic firewall protection for peace of mind.</p>
+                <div class="price">$10 <span>/ month</span></div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="card">
+                <h3>Marketing & Basic SEO</h3>
+                <p>Installation of GA4, Meta Pixel, and essential meta tags to track your digital growth.</p>
+                <div class="price">$30 <span>/ one-time</span></div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="card">
+                <h3>Remote IT Support</h3>
+                <p>On-demand remote troubleshooting for software issues or single-incident system configurations.</p>
+                <div class="price">$15 <span>/ session</span></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact">
+        <h2>Ready to grow your business?</h2>
+        <p>Contact us today for a free consultation or to start your project.</p>
+        <div class="contact-info">
+            Phone: <a href="tel:+16573335965">+1 (657) 333-5965</a>
+        </div>
+        <p style="font-size: 0.9rem; color: #888; margin-top: 2rem;">&copy; 2026 JW Internet Technology. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

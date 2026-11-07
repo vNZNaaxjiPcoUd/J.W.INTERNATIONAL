@@ -1,83 +1,278 @@
----
-layout: html
-title: JWINT
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JWINT - JW Internet Technology. Affordable web and IT services for small businesses.">
+    <title>JWINT | Web & IT Solutions</title>
+    <style>
+        /* CSS Reset & Core Variables */
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f8f9fa;
+            --text-color: #333333;
+            --accent-color: #28a745;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-  <!-- Grid We Do-->
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            line-height: 1.6;
+        }
 
-  <style>
-    .equal-row {
-      display: flex; /* Enable Flexbox */
-      flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    }
-    .equal-col {
-      display: flex; /* Make each column a flex container */
-      flex-direction: column; /* Stack content vertically */
-      /* justify-content: space-between;  Optional: Distribute space if needed */
-      align-items: flex-start；
-    }
+        /* Navigation */
+        header {
+            background-color: #ffffff;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-    .justified-text {
-      text-align: justify;
-    }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
 
-  </style>
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
 
-  <div class="w3-row w3-container">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
-    </div>
-    <div class="equal-row">
-      <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16 equal-col">
-        <h3>Design</h3>
-        <p>Managing domain, email, and cloud infrastructure requires significant resource allocation. We engineer tailored technical solutions that optimize your setup, enabling your team to focus entirely on core business growth.</p>
-      </div>
+        nav a:hover {
+            color: var(--primary-color);
+        }
 
-      <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16 equal-col">
-        <h3>Deliver</h3>
-        <p>In alignment with your selected tier, we execute your tailored specifications to deliver a fully integrated, turnkey solution backed by end-to-end onboarding support and system verification.</p>
-      </div>
+        /* Hero Section */
+        .hero {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 5rem 5%;
+        }
 
-      <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16 equal-col">
-        <h3>Operate</h3>
-        <p>We ensure continuous operational excellence through proactive system health monitoring. By managing underlying technical complexities, we empower your business to operate with absolute stability and peace of mind.</p>
-      </div>
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
 
-      <div class="w3-col l3 m6 w3-black w3-container w3-padding-16 equal-col">
-        <h3>Support</h3>
-        <p>Should you experience operational disruptions, technical inquiries, or system anomalies, our dedicated support specialists are immediately available via email and live chat to deliver rapid resolution.</p>
-      </div>
-    </div>
-<br><br><br>
-    <div>
-      <h2>Brand Vision</h2><h3>Empowering Enterprise Ambition Through Seamless Technology Orchestration</h2>
-      <p class="justified-text">In an increasingly hyper-connected global economy, technology is no longer merely an operational utility—it is the ultimate strategic lever for enterprise agility, scale, and sustainable market leadership. At J.W. INTERNET TECHNOLOGY, our core imperative is simple yet transformative: "Empower your Vision with seamlessly integrated technology solutions." We believe that visionary enterprises should never be constrained by technical friction, fragmented architectures, or the overwhelming complexity of digital infrastructure. Modern organizations frequently struggle with siloed domain management, vulnerable communications, and misaligned cloud environments—challenges that subtly divert valuable leadership energy away from strategic expansion and core innovation.</p>
-      <p class="justified-text">J.W. INTERNET TECHNOLOGY bridges the gap between ambitious corporate vision and technical reality. We serve as an indispensable technology architecture partner, engineering unified, resilient, and future-ready digital ecosystems tailored to your exact growth trajectory. By harmonizing domain governance, corporate email frameworks, and scalable cloud infrastructures into a single, cohesive engine, we eliminate systemic inefficiencies and mitigate risk. Partnering with J.W. INTERNET TECHNOLOGY means equipping your enterprise with an unwavering digital backbone. We absorb the complexities of modern IT so your leadership team can focus entirely on driving market share, accelerating innovation, and turning bold strategic visions into market dominance.</p>
-    </div>
-<br>
-    <div>
-      <h2>Design</h2><h3>Precision Technical Engineering for Core Business Growth</h3>
-      <p class="justified-text">A resilient digital infrastructure requires more than off-the-shelf software; it demands bespoke engineering aligned with your long-term business objectives. Managing enterprise domain portfolios, secure email authentication protocols, and hybrid cloud environments requires substantial technical expertise and continuous resource allocation. When internal teams spend disproportionate energy navigating infrastructure maintenance, cloud cost inefficiencies, and technical debt, enterprise momentum inevitably stalls.</p>
-      <p class="justified-text">Our Design philosophy centers on intelligent, tailored architecture. J.W. INTERNET TECHNOLOGY conducts a deep diagnostic of your operational workflows, traffic patterns, and expansion roadmaps to engineer custom technical solutions that eliminate structural bottlenecks. We optimize every layer of your IT footprint—from implementing multi-region cloud redundancy and domain security protocols to streamlining corporate messaging infrastructure. By tailoring solutions specifically to your organizational demands, we significantly reduce operational overhead, optimize capital expenditure, and enhance total system performance. The result is a clean, scalable, and highly efficient technical foundation that liberates your talent to dedicate 100% of their focus to core business development and value creation.</p>
-    </div>
-<br>
-    <div>
-      <h2>Turnkey Execution</h2><h3>Seamless Onboarding, and Rigorous Verification</h3>
-      <p class="justified-text">Transitioning from architectural design to active deployment is often the most vulnerable phase of digital transformation. Misaligned specifications, unexpected integration downtime, and complex migration processes can jeopardize business continuity. At J.W. INTERNET TECHNOLOGY, our Deliver framework guarantees a seamless, zero-friction transition from strategy to live execution, ensuring your infrastructure upgrades yield immediate operational ROI.</p>
-      <p class="justified-text">Aligned precisely with your selected service tier, we execute your custom specifications to deliver a fully integrated, turnkey technical solution. Our commitment extends far beyond system provisioning: we provide comprehensive, end-to-end onboarding support to guide your internal stakeholders through every phase of implementation. Prior to go-live, every system undergoes exhaustive verification and validation—including rigorous load testing, vulnerability scanning, and failover simulations. This meticulous quality assurance guarantees that your deployed infrastructure meets the highest standards of security, speed, and reliability from day one, allowing your organization to scale with absolute confidence and zero operational disruption.</p>
-    </div>
-<br>
-    <div>
-      <h2>Operate</h2><h3>Proactive Governance for Uncompromising Operational Excellence</h3>
-      <p class="justified-text">In a digital-first marketplace, even brief system degradation can result in reputational damage and revenue loss. Relying on traditional, reactive "break-fix" support models leaves organizations exposed to unacceptable operational risks. True enterprise stability requires continuous oversight, predictive management, and proactive optimization behind the scenes.</p>
-      <p class="justified-text">J.W. INTERNET TECHNOLOGY’s Operate model delivers continuous operational excellence through proactive system health monitoring and real-time infrastructure governance. Utilizing advanced telemetry and automated diagnostic tools, our infrastructure specialists continuously audit your cloud architecture, server loads, and network pathways to detect and resolve potential anomalies long before they impact your business operations or end-user experience. By managing the underlying technical complexities of your digital ecosystem around the clock, we protect your organization against unexpected downtime, performance degradation, and security threats. We provide the structural stability and peace of mind necessary for your enterprise to operate at peak efficiency, 24/7/365.</p>
-    </div>
-<br>
-    <div>
-      <h2>Support</h2><h3>Specialist-Led Immediate Response for Mission-Critical Stability</h3>
-      <p class="justified-text">When operational queries arise or critical anomalies occur, waiting through multi-tiered helpdesks or generic automated ticket queues is unacceptable. Modern enterprises require immediate, expert-level technical intervention to safeguard continuity and maintain stakeholder trust.</p>
-      <p class="justified-text">Our Support framework is designed to deliver rapid, definitive resolution whenever you need it. Should you experience operational disruptions, technical inquiries, or unexpected system anomalies, J.W. INTERNET TECHNOLOGY’s dedicated support specialists are instantly accessible via Email and Live Chat. You gain direct access to seasoned engineers who possess deep contextual knowledge of your specific environment. We prioritize immediate triage, root-cause identification, and swift remediation to minimize mean-time-to-resolution (MTTR). Beyond resolving immediate challenges, our support specialists document every incident to refine system resilience continuously. With J.W. INTERNET TECHNOLOGY as your trusted support partner, your business is backed by an elite technical safety net at every step of your journey.</p>
-    </div>
-  </div>
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
 
+        .cta-btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
 
+        .cta-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Services & Pricing Section */
+        .services {
+            padding: 5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            font-weight: normal;
+            color: #666;
+        }
+
+        /* Footer & Contact */
+        footer {
+            background-color: #222222;
+            color: #ffffff;
+            text-align: center;
+            padding: 4rem 5%;
+        }
+
+        footer h2 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            font-size: 1.5rem;
+            margin: 1.5rem 0;
+            font-weight: bold;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav a {
+                margin: 0 0.5rem;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <a href="#" class="logo">JWINT</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <h1>JW Internet Technology</h1>
+        <p>Reliable, affordable, and professional web development and IT solutions tailored for micro-businesses and individuals.</p>
+        <a href="#contact" class="cta-btn">Get Started Today</a>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section class="services" id="services">
+        <h2 class="section-title">Our Services & Pricing</h2>
+        <div class="grid">
+            
+            <!-- Service 1 -->
+            <div class="card">
+                <h3>Single-Page Website</h3>
+                <p>A professional landing page using our premium templates to showcase your brand online quickly.</p>
+                <div class="price">$50 <span>/ one-time</span></div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="card">
+                <h3>Micro E-Commerce Setup</h3>
+                <p>Basic shopping cart setup with payment gateway integration for up to 5 core products.</p>
+                <div class="price">$200 <span>/ one-time</span></div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="card">
+                <h3>Cloud Workspace Setup</h3>
+                <p>Domain verification and business email setup (Google Workspace).</p>
+                <div class="price">$100 <span>/ one-time</span></div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="card">
+                <h3>Web Hosting</h3>
+                <p>Monthly system updates, routine data backups, and basic firewall protection for peace of mind.</p>
+                <div class="price">$100 <span>/ month</span></div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="card">
+                <h3>Marketing & Basic SEO</h3>
+                <p>Installation of GA4, Meta Pixel, and essential meta tags to track your digital growth.</p>
+                <div class="price">$200 <span>/ one-time</span></div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="card">
+                <h3>Remote IT Support</h3>
+                <p>On-demand remote troubleshooting for software issues or single-incident system configurations.</p>
+                <div class="price">$50 <span>/ session-hour</span></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact">
+        <h2>Ready to grow your business?</h2>
+        <p>Contact us today for a free consultation or to start your project.</p>
+        <div class="contact-info">
+            Phone: <a href="tel:+16573335965">+1 (657) 333-5965</a>
+        </div>
+        <p style="font-size: 0.9rem; color: #888; margin-top: 2rem;">&copy; 2026 JW Internet Technology. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
